@@ -1,0 +1,50 @@
+﻿@model Assignment_2.Models.phone
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>phone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.models)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.models)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.launch_year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.launch_year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ratings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ratings)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.phones }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
